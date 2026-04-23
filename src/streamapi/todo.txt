@@ -1,0 +1,238 @@
+JAVA STREAM - 2 DAY TODO PLAN
+From 0 to Hero Practice Roadmap
+
+Goal:
+Master Java Stream fundamentals, transformations, filtering, mapping, sorting,
+collectors, grouping, aggregation, Optional handling, and real-world data processing.
+
+Rules for your practice:
+1. Solve every problem using Java Stream first.
+2. After solving, explain in one sentence what each pipeline stage does.
+3. For every problem, write down:
+   - input
+   - expected output
+   - stream operations used
+   - one alternative approach
+4. If a problem feels hard, first solve it with loops, then rewrite with Stream.
+5. Do not memorize syntax blindly. Focus on data flow.
+
+==================================================
+DAY 1 - FOUNDATION + CORE OPERATIONS
+==================================================
+
+Block 1 - Stream Basics
+[ ] 1. Create a stream from a List of integers and print all values.
+[ ] 2. Filter only even numbers from a list.
+[ ] 3. Filter only odd numbers from a list.
+[ ] 4. Find numbers greater than 10.
+[ ] 5. Count how many numbers are positive.
+[ ] 6. Count how many strings are empty.
+[ ] 7. Convert all names to uppercase.
+[ ] 8. Convert all names to lowercase.
+[ ] 9. Find the length of each word in a list.
+[ ] 10. Remove null or blank strings from a list.
+
+Block 2 - map, filter, distinct, sorted
+[ ] 11. Square every number in a list.
+[ ] 12. Double every number in a list.
+[ ] 13. Remove duplicate numbers using distinct.
+[ ] 14. Remove duplicate words ignoring case.
+[ ] 15. Sort numbers ascending.
+[ ] 16. Sort numbers descending.
+[ ] 17. Sort strings alphabetically.
+[ ] 18. Sort strings by length.
+[ ] 19. Filter names that start with 'A'.
+[ ] 20. Filter words that contain a given substring.
+
+Block 3 - Terminal Operations
+[ ] 21. Find the first element in a list.
+[ ] 22. Find any element from a stream.
+[ ] 23. Check if all numbers are positive.
+[ ] 24. Check if any number is negative.
+[ ] 25. Check if no string is blank.
+[ ] 26. Get the maximum number.
+[ ] 27. Get the minimum number.
+[ ] 28. Sum all numbers.
+[ ] 29. Find the average of numbers.
+[ ] 30. Join all strings with commas.
+
+Block 4 - Collectors Basics
+[ ] 31. Collect filtered numbers into a List.
+[ ] 32. Collect unique sorted numbers into a Set.
+[ ] 33. Convert a list of words into a map: word -> length.
+[ ] 34. Collect only uppercase words into a List.
+[ ] 35. Count occurrences of each word.
+[ ] 36. Partition numbers into even and odd.
+[ ] 37. Group strings by their first character.
+[ ] 38. Group words by length.
+[ ] 39. Find how many names belong to each length group.
+[ ] 40. Convert List<Person> into List<String> of names.
+
+Block 5 - Objects with Streams
+Use a Person class with: id, name, age, salary, department.
+
+[ ] 41. Get all person names.
+[ ] 42. Get names of people older than 30.
+[ ] 43. Find all employees in Engineering.
+[ ] 44. Increase every salary virtually by 10 percent and return the new values.
+[ ] 45. Find the highest salary.
+[ ] 46. Find the employee with the highest salary.
+[ ] 47. Find the youngest person.
+[ ] 48. Count employees per department.
+[ ] 49. Group employees by department.
+[ ] 50. Sort employees by salary ascending.
+[ ] 51. Sort employees by salary descending.
+[ ] 52. Sort employees by age, then by name.
+[ ] 53. Get distinct department names.
+[ ] 54. Check if any employee earns more than a target salary.
+[ ] 55. Check if all employees are adults.
+
+Block 6 - Reflection and Mini Review
+[ ] 56. Rewrite 3 Day 1 problems without looking at notes.
+[ ] 57. For each of these operations, explain when to use it:
+       map, filter, sorted, distinct, collect, reduce, groupingBy.
+[ ] 58. Write a cheat sheet from memory for the most used Stream methods.
+[ ] 59. Identify 5 problems where Stream made code clearer.
+[ ] 60. Identify 3 cases where loops may still be simpler.
+
+==================================================
+DAY 2 - INTERMEDIATE TO ADVANCED + REAL WORLD THINKING
+==================================================
+
+Block 1 - flatMap and Nested Data
+Use classes like:
+Department -> List<Employee>
+Order -> List<Item>
+Student -> List<Course>
+
+[ ] 61. Flatten a List<List<Integer>> into a single list.
+[ ] 62. Flatten a list of sentences into a list of words.
+[ ] 63. From a list of departments, extract all employees into one list.
+[ ] 64. From a list of students, extract all courses.
+[ ] 65. Get distinct courses from all students.
+[ ] 66. Count how many total items exist across all orders.
+[ ] 67. Sum total price of all items across all orders.
+[ ] 68. Find the most expensive item across all orders.
+[ ] 69. Get all employee emails from nested department data.
+[ ] 70. Find departments that have at least one employee with salary above a threshold.
+
+Block 2 - Advanced Collectors and Aggregation
+[ ] 71. Group employees by department and count them.
+[ ] 72. Group employees by department and compute average salary.
+[ ] 73. Group employees by department and find max salary.
+[ ] 74. Group employees by department and list employee names.
+[ ] 75. Partition employees into salary > 50000 and <= 50000.
+[ ] 76. Create a map of department -> total salary.
+[ ] 77. Find the department with the highest average salary.
+[ ] 78. Find duplicate elements and their counts.
+[ ] 79. Find the first non-repeated character in a string.
+[ ] 80. Find the frequency of each character in a string.
+
+Block 3 - reduce and Custom Logic
+[ ] 81. Multiply all numbers using reduce.
+[ ] 82. Concatenate a list of strings using reduce.
+[ ] 83. Find the longest string using reduce.
+[ ] 84. Find total salary of all employees using reduce.
+[ ] 85. Build a single comma-separated employee name string using reduce.
+[ ] 86. Find the product of only even numbers.
+[ ] 87. Sum squares of all odd numbers.
+[ ] 88. Find the second highest number.
+[ ] 89. Find the second highest salary among employees.
+[ ] 90. Find top 3 highest paid employees.
+
+Block 4 - Optional, Null Safety, and Edge Cases
+[ ] 91. Handle empty stream when finding max.
+[ ] 92. Return default value when no employee exists in a department.
+[ ] 93. Safely process a list that may contain null employees.
+[ ] 94. Safely process employees whose department may be null.
+[ ] 95. Find a person by id and return Optional.
+[ ] 96. Convert Optional<Person> into Optional<String> of name.
+[ ] 97. Throw a custom exception if a required employee is missing.
+[ ] 98. Explain when Optional should not be used.
+[ ] 99. Compare findFirst vs findAny in meaning and use case.
+[ ] 100. Explain why Stream pipelines should avoid side effects.
+
+Block 5 - Real World Backend Style Problems
+Use realistic domain classes:
+User, Order, Product, Transaction, Invoice, LogEntry.
+
+[ ] 101. Get active users only.
+[ ] 102. Find users created in the last 30 days.
+[ ] 103. Get email addresses of users with verified accounts.
+[ ] 104. Find total order amount per customer.
+[ ] 105. Find customers who placed more than 3 orders.
+[ ] 106. Find the most purchased product.
+[ ] 107. Find failed transactions only.
+[ ] 108. Count errors by log level.
+[ ] 109. Group logs by service name.
+[ ] 110. Find the latest transaction per user.
+[ ] 111. Find invoices that are overdue.
+[ ] 112. Calculate total unpaid invoice amount.
+[ ] 113. Find duplicate users by email.
+[ ] 114. Normalize emails to lowercase and remove duplicates.
+[ ] 115. Build a dashboard summary object from raw transaction data.
+
+Block 6 - Challenge Problems
+[ ] 116. Given a paragraph, return the top 5 most frequent words.
+[ ] 117. Given employee data, return department summaries sorted by average salary.
+[ ] 118. Given orders, find customers who bought every product in a target category.
+[ ] 119. Given logs, find the first timestamp where 3 consecutive ERROR entries occurred.
+[ ] 120. Given transactions, detect suspicious users with total transfers above threshold in one day.
+[ ] 121. Given students and courses, find students enrolled in all mandatory courses.
+[ ] 122. Build a nested report: department -> role -> employee count.
+[ ] 123. Given products, return the cheapest product in each category.
+[ ] 124. Given invoices, group overdue totals by month.
+[ ] 125. Rebuild 2 challenge problems using loops, then compare readability with Stream.
+
+==================================================
+FINAL MASTERY CHECKLIST
+==================================================
+
+By the end of Day 2, you should be able to explain clearly:
+[ ] What is a Stream and how it differs from a Collection.
+[ ] The difference between intermediate and terminal operations.
+[ ] When map should be used vs flatMap.
+[ ] When collect should be used vs reduce.
+[ ] How groupingBy, partitioningBy, mapping, and counting work together.
+[ ] Why side effects inside Stream operations are dangerous.
+[ ] Why readability matters more than forcing Stream everywhere.
+[ ] How Optional appears naturally after findFirst, max, min, and reduce.
+[ ] How to model real backend transformations using Stream.
+[ ] When to stop using Stream and choose a loop for clarity.
+
+==================================================
+SUGGESTED 2-DAY EXECUTION PLAN
+==================================================
+
+Day 1 Morning:
+- Problems 1 to 20
+
+Day 1 Afternoon:
+- Problems 21 to 40
+
+Day 1 Evening:
+- Problems 41 to 60
+
+Day 2 Morning:
+- Problems 61 to 85
+
+Day 2 Afternoon:
+- Problems 86 to 110
+
+Day 2 Evening:
+- Problems 111 to 125
+- Final Mastery Checklist
+
+==================================================
+HOW TO USE THIS WELL
+==================================================
+
+For each solved problem, write:
+- What was the input shape?
+- What transformation happened?
+- What did the terminal operation return?
+- Would this still be readable in production code?
+
+Priority rule:
+Do not rush to finish all 125 problems mechanically.
+It is better to deeply understand 60 to 80 of them than to blindly copy all 125.

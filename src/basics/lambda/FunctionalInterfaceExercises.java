@@ -1,12 +1,15 @@
 package basics.lambda;
 
+
+import static basics.lambda.solutions.FunctionalInterfaceSolutions.*;
+
 public class FunctionalInterfaceExercises {
 
     public static final String[] TASKS = {
             "01. Utilise un Predicate<Employee> pour récupérer les employés adultes (age >= 30).",
             "02. Compose deux Predicate<Employee> pour récupérer les employés actifs avec salaire >= 5000.",
             "03. Combine des Predicate<Employee> avec or() pour récupérer les employés Engineering ou Finance.",
-            "04. Utilise un Function<Employee, String> pour transformer chaque nom en uppercase.",
+            "04. Utilise un Function<Employee, String> pour transformer chaque nom en uppercase, puis collecte avec toMap(Employee::name, fn) pour obtenir une Map<String, String> (nom original → uppercase).",
             "05. Utilise un Function<Employee, Integer> pour retourner la longueur de chaque nom.",
             "06. Utilise un Function<Employee, BigDecimal> puis une transformation pour ajouter 500 à chaque salaire.",
             "07. Utilise un Function<Employee, String> pour classer les salaires en LOW, MID, HIGH.",
@@ -36,8 +39,9 @@ public class FunctionalInterfaceExercises {
     };
 
     public static void main(String[] args) {
-        for (String task : TASKS) {
-            System.out.println(task);
-        }
+
+        boolean token  = nameInUppercase.equals(FunctionalInterfaceResults.TASK_04_NAME_TO_UPPERCASE);
+        System.out.println(token? "OK" : "KO");
+        System.out.println(nameInUppercase);
     }
 }

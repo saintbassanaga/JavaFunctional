@@ -38,8 +38,8 @@ public class LambdaExercises {
     };
 
     public static void main(String[] args) {
-        boolean token = LambdaSolutions.normalizedWords.equals(LambdaResults.TASK_02_NORMALIZED_UNIQUE_WORDS);
+        boolean token = LambdaSolutions.absoluteValues.equals(LambdaResults.TASK_05_ABSOLUTE_VALUES);
         System.out.println(token ? "OK" : "KO");
-        System.out.println(LambdaSolutions.normalizedWords);
+        System.out.println(LambdaSolutions.absoluteValues);
     }
 }

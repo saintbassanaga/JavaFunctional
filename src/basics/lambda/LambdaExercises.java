@@ -1,6 +1,6 @@
 package basics.lambda;
 
-import basics.lambda.algorithms.lambda.LambdaSolutions;
+import basics.lambda.solutions.LambdaSolutions;
 
 public class LambdaExercises {
 

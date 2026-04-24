@@ -1,4 +1,4 @@
-package basics.lambda.algorithms.lambda;
+package basics.lambda.solutions;
 
 import basics.lambda.LambdaFunctionalInput;
 

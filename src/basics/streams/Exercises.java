@@ -1,4 +1,4 @@
-package streamapi;
+package basics.streams;
 
 public class Exercises {
 
@@ -6,9 +6,8 @@ public class Exercises {
      * FULL 125-TASK STREAM PRACTICE SHEET
      *
      * Files:
-     * - Input.java        -> fixed source data
-     * - Result.java       -> exact expected answers for the first 50 canonical tasks
-     * - Exercises125.java -> full challenge list of 125 tasks
+     * - Input.java   -> fixed source data
+     * - Result.java  -> exact expected answers for the first 50 canonical tasks
      *
      * Usage:
      * 1. Solve tasks 1-50 and verify against Result.java.

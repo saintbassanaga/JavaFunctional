@@ -40,8 +40,8 @@ public class FunctionalInterfaceExercises {
 
     public static void main(String[] args) {
 
-        boolean token  = nameInUppercase.equals(FunctionalInterfaceResults.TASK_04_NAME_TO_UPPERCASE);
+        boolean token  = constanteValue.equals(FunctionalInterfaceResults.TASK_09_SUPPLIER_CONSTANT);
         System.out.println(token? "OK" : "KO");
-        System.out.println(nameInUppercase);
+        System.out.println(constanteValue);
     }
 }
